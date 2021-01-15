@@ -1,0 +1,57 @@
+:root{
+	--mainColor:black;
+	--secondaryColor:#282828;
+
+	--borderColor:#c1c1c1;
+
+	--mainText:black;
+	--secondaryText:#303030;
+
+	--themeDotBorder:#24292e;
+
+	--previewBg:rgb(251, 249, 243, 0.9);
+	--previewShadow:#f0ead6;
+
+
+	--buttonColor:black;
+
+
+}
+h1, h2, h3, h4, h5, h6, strong{
+	color: var(--mainText);
+	font-family: 'Russo One', sans-serif;
+	font-weight: 500;
+}
+
+p{
+	color: var(--secondaryText);
+	font-family: 'Roboto Mono', monospace;
+	word-spacing: 20px;
+	font-size: 25px;
+}
+
+body{
+  background-image: url("../img/image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.preview{
+	width: auto;
+	height: auto;
+	margin: 60px 12px 30px 7px;
+	border:1.5px solid #17a2b8;
+	border-radius: 5px;
+	background-color: var(--previewBg);
+	padding:15px;
+	overflow: auto;
+}
+
+@media screen and (max-width: 500px){
+    .home{
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
