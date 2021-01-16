@@ -1,11 +1,3 @@
-/* ---------------------------------------------- */
-/*            CODE EXPLAINED TUTORIALS            */
-/*         www.youtube.com/CodeExplained          */
-/* ---------------------------------------------- */
-
-// SELECT ALL ELEMENTS
-
-
 
 const country_name_element = document.querySelector(".country .name");
 const total_cases_element = document.querySelector(".total-cases .value");
@@ -91,29 +83,7 @@ function fetchData(country) {
           recovered_list.push(entry.Cases);
         });
       });
-/*    let url = "https://api.covid19api.com/total/country/" + country +"/status/recovered",
 
-  https.get(url,function(response)
-{
-
-let data="";
-
-response.on("data",function(chunk)
-{
-data += chunk;
-
-})
-var datarecovered;
-response.on('end', () => {
-datarecovered =  JSON.parse(data);
-datarecovered.forEach((entry) => {
-  recovered_list.push(entry.Cases);
-});
-
-
-});
-})*/
-//})
 
     await fetch(
       "https://api.covid19api.com/total/country/" + country + "/status/deaths",
